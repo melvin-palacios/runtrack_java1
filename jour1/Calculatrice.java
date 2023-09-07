@@ -1,15 +1,21 @@
 import java.util.Scanner;
 
-public static Calculatrice {
+public class Calculatrice {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Veuillez saisir le premier nombre:");
-        int a = scanner.nextInt();
-        System.out.print("Veuillez saisir le deuxième nombre:");
-        int b = scanner.nextInt();
-        System.out.print("Somme:" + (a + b));
-        System.out.print("Différence:" + (a - b));
-        System.out.print("Produit:" + (a * b));
-        System.out.print("Quotient:" + (a / b));
+        System.out.print("Veuillez saisir le premier nombre: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Veuillez saisir le deuxième nombre: ");
+        int num2 = scanner.nextInt();
+
+        System.out.println("Somme: " + (num1 + num2));
+        System.out.println("Différence: " + (num1 - num2));
+        System.out.println("Produit: " + (num1 * num2));
+
+        if (num2 != 0) {
+            System.out.println("Quotient: " + ((double) num1 / num2));
+        } else {
+            System.out.println("Quotient: Division by zero is not allowed.");
+        }
     }
 }

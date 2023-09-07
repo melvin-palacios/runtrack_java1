@@ -39,7 +39,7 @@ public class EtudiantTest {
         }
         return somme / notes.size();
     }
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         EtudiantTest etudiant = new EtudiantTest("Bob");
         etudiant.ajouterNote (10.0);
         etudiant.ajouterNote (12.0);

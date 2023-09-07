@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Helloworld {
-    public static void(Sting[] args) {
+    public static void main(Sting[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Veuillez saisir votre nom:");
